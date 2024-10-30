@@ -1,4 +1,4 @@
-import { IoIosArrowDropdown } from "react-icons/io";
+import { TiArrowSortedDown } from "react-icons/ti";
 import styled from "styled-components";
 
 const Header = () => {
@@ -13,16 +13,16 @@ const Header = () => {
           <nav>
             <span>
               Personal
-              <IoIosArrowDropdown />
+              <TiArrowSortedDown />
             </span>
             <span>
-              Business <IoIosArrowDropdown />
+              Business <TiArrowSortedDown />
             </span>
             <span>
-              Company <IoIosArrowDropdown />
+              Company <TiArrowSortedDown />
             </span>
             <span>
-              Help <IoIosArrowDropdown />
+              Help <TiArrowSortedDown />
             </span>
           </nav>
         </Navigations>
@@ -46,14 +46,15 @@ background-color: white;
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 250px;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  height: 5rem;
-  box-shadow: 15px;
-  `;
+  height:75px;
+  width: 100%;
+  /* background-color: black; */
+  box-shadow :0 4px 13px rgba(0,0,0,.05) ;
+  `
 
 const LogoNav = styled.div`
   display: flex;
@@ -73,6 +74,7 @@ const Navigations = styled.div`
   span {
     font-size: 14px;
     font-weight: 600;
+    font-family: sans-serif;
     justify-content: center;
     align-items: center;
     margin-right: 3.5rem;
@@ -93,8 +95,6 @@ background-color: white;
 color: #40196d;
 font-size: 15px;
 font-weight: 600;
-;
-
 `;
 
 
